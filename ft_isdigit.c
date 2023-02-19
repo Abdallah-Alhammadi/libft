@@ -6,19 +6,15 @@
 /*   By: abalhamm <abalhamm@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/10 11:23:11 by abalhamm          #+#    #+#             */
-/*   Updated: 2023/01/10 11:39:58 by abalhamm         ###   ########.fr       */
+/*   Updated: 2023/01/22 03:01:30 by abalhamm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isdigit(int d)
+#include "libft.h"
+
+int	ft_isdigit(int c)
 {
-	if (d > 47 && d < 58)
+	if (c >= '0' && c <= '9')
 		return (1);
 	return (0);
 }
-/*#include <stdio.h>
-
-int main (void)
-{
-    printf("%d",ft_isdigit('0'));
-}*/
